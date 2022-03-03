@@ -91,20 +91,6 @@
                                     <span class="bar2"></span>
                                     <span class="bar3"></span>
                                 </div>
-                                <div class="show-searchbox">
-                                    <a href="#"><i class="webex-icon-Search"></i></a>
-                                </div>
-                                <div class="toggle-searchbox">
-                                    <form action="#" id="searchform-all" method="get">
-                                        <div>
-                                            <input type="text" id="s" class="form-control" placeholder="Search...">
-                                            <div class="input-box">
-                                                <input type="submit" value="" id="searchsubmit"><i
-                                                    class="fa fa-search"></i>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
                             <div class="main-menu">
                                 <nav id="mobile-menu">
@@ -176,10 +162,11 @@
                     </div>
                     <div class="col-md-12 col-xl-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
                         <h5 class="mrb-15 text-primary-color text-underline">Welcome to {{ env('APP_NAME') }}</h5>
-                        <h2 class="mrb-25">Most Leading Industrial Service Provider.</h2>
+                        <h2 class="mrb-25">Most Leading Industrial Products Provider.</h2>
                         <p>{{ env('APP_NAME') }} is one of the pioneers in manufacturing ceramic and porcelain
                             tiles with Grannitto as its brand name. It’s operating since 1996 and has gained high
-                            goodwill in the Building Material and Construction Industry not only in UAE but worldwide.</p>
+                            goodwill in the Building Material and Construction Industry not only in UAE but worldwide.
+                        </p>
                         <ul class="order-list primary-color">
                             <li>Quality Control System, 100% Satisfaction Guarantee</li>
                             <li>Expertise & Innovation from a truly global company</li>
@@ -271,7 +258,7 @@
                         <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms"
                             style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                             <h5 class="text-primary-color text-underline section-icon mrb-15">Services We Offer</h5>
-                            <h2 class="text-white">We Provide The Best Service For Your Business</h2>
+                            <h2 class="text-white">We Provide The Best Products For Your Business</h2>
                         </div>
                         <div class="col"></div>
                     </div>
@@ -282,7 +269,7 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-4 col-xl-4">
                             <div class="service-item">
-                                <img src="images/flaticons/1.png" alt="">
+                                <img src="{{ asset('images/flaticons/1.png') }}" alt="">
                                 <h4 class="service-title"><a href="#">Petroleum and Gas</a></h4>
                                 <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting indstry. lpsum has been the</p>
@@ -292,7 +279,7 @@
                         </div>
                         <div class="col-md-6 col-lg-4 col-xl-4">
                             <div class="service-item">
-                                <img src="images/flaticons/2.png" alt="">
+                                <img src="{{ asset('images/flaticons/2.png') }}" alt="">
                                 <h4 class="service-title"><a href="#">Metal Industry</a></h4>
                                 <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting indstry. lpsum has been the</p>
@@ -302,38 +289,8 @@
                         </div>
                         <div class="col-md-6 col-lg-4 col-xl-4">
                             <div class="service-item">
-                                <img src="images/flaticons/3.png" alt="">
+                                <img src="{{ asset('images/flaticons/3.png') }}" alt="">
                                 <h4 class="service-title"><a href="#">Civil Engineering</a></h4>
-                                <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting indstry. lpsum has been the</p>
-                                <a class="service-link" href="#">Read More<span
-                                        class="fa fa-long-arrow-right mrl-10"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="service-item">
-                                <img src="images/flaticons/1.png" alt="">
-                                <h4 class="service-title"><a href="#">Oil Refinery</a></h4>
-                                <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting indstry. lpsum has been the</p>
-                                <a class="service-link" href="#">Read More<span
-                                        class="fa fa-long-arrow-right mrl-10"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="service-item">
-                                <img src="images/flaticons/2.png" alt="">
-                                <h4 class="service-title"><a href="#">Bridge Construction</a></h4>
-                                <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting indstry. lpsum has been the</p>
-                                <a class="service-link" href="#">Read More<span
-                                        class="fa fa-long-arrow-right mrl-10"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="service-item">
-                                <img src="images/flaticons/3.png" alt="">
-                                <h4 class="service-title"><a href="#">Chemical Research</a></h4>
                                 <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting indstry. lpsum has been the</p>
                                 <a class="service-link" href="#">Read More<span
@@ -344,10 +301,12 @@
                 </div>
             </div>
         </section>
-        <!-- Project Section Start -->
         <section class="project-section pdt-105 pdb-80"
-            data-background="{{ asset('assets/images/bg/abs-bg5.png') }}">
-            <div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            data-background="{{ asset('assets/images/bg/abs-bg5.png') }}"
+            style="background-image: url(&quot;images/bg/abs-bg5.png&quot;);">
+            <div class="section-title text-center wow fadeInUp animated" data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+                style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                 <div class="container">
                     <div class="row">
                         <div class="col"></div>
@@ -364,8 +323,10 @@
             </div>
             <div class="section-content">
                 <div class="container">
-                    <div class="row grid wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing">
+                    <div class="row grid wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms"
+                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; position: relative; height: 841.094px;">
+                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing"
+                            style="position: absolute; left: 0%; top: 0px;">
                             <div class="project-item mrb-30">
                                 <div class="project-thumb">
                                     <img class="img-full"
@@ -380,7 +341,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 grid-item business chemical">
+                        <div class="col-lg-4 col-md-6 grid-item business chemical"
+                            style="position: absolute; left: 33.3333%; top: 0px;">
                             <div class="project-item mrb-30">
                                 <div class="project-thumb">
                                     <img class="img-full"
@@ -395,7 +357,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 grid-item industry construction">
+                        <div class="col-lg-4 col-md-6 grid-item industry construction"
+                            style="position: absolute; left: 66.6667%; top: 0px;">
                             <div class="project-item mrb-30">
                                 <div class="project-thumb">
                                     <img class="img-full"
@@ -410,7 +373,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 grid-item construction business">
+                        <div class="col-lg-4 col-md-6 grid-item construction business"
+                            style="position: absolute; left: 0%; top: 420.547px;">
                             <div class="project-item mrb-30">
                                 <div class="project-thumb">
                                     <img class="img-full"
@@ -425,7 +389,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing">
+                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing"
+                            style="position: absolute; left: 33.3333%; top: 420.547px;">
                             <div class="project-item mrb-30">
                                 <div class="project-thumb">
                                     <img class="img-full"
@@ -440,7 +405,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing">
+                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing"
+                            style="position: absolute; left: 66.6667%; top: 420.547px;">
                             <div class="project-item mrb-30">
                                 <div class="project-thumb">
                                     <img class="img-full"
@@ -459,6 +425,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Project Section End -->
         <!-- Funfact Section Start -->
         <section class="pdt-120 pdb-50 pdb-sm-40 section-white-typo funfact-section"
@@ -561,7 +528,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <select name="categories" class="custom-select-categories" required>
-                                                <option value="">- Choose Service -</option>
+                                                <option value="">- Choose Products -</option>
                                                 <option>Building Construction</option>
                                                 <option>Metal Industry</option>
                                                 <option>Oil & Gas</option>
@@ -630,7 +597,7 @@
                                 </div>
                                 <div class="cta-contact-content">
                                     <div class="cta-contact-text">Call Us Now</div>
-                                    <div class="cta-contact-number">(+2)-522-441-332</div>
+                                    <div class="cta-contact-number">{{ env('APP_PHONE') }}</div>
                                 </div>
                             </div>
                         </div>
@@ -660,15 +627,21 @@
                             <div class="widget footer-widget">
                                 <img src="images/logo-footer.png" alt="" class="mrb-20">
                                 <address class="mrb-25">
-                                    <p class="text-light-gray">32 Dora Creek Western Park Avenue, tuntable creek, New
-                                        South
-                                        Wales 2480, Australia</p>
-                                    <div class="display-inline-block mrb-10"><a href="#" class="text-light-gray"><i
-                                                class="fa fa-phone mrr-10"></i>+088 234 432 15565</a></div>
-                                    <div class="display-inline-block mrb-10"><a href="#" class="text-light-gray"><i
-                                                class="fa fa-envelope-o mrr-10"></i>sample@yourdomain.com</a></div>
+                                    <p class="text-light-gray">{{ env('APP_ADDRESS') }}</p>
+                                    <div class="display-inline-block mrb-10">
+                                        <a href="#" class="text-light-gray"><i
+                                                class="fa fa-phone mrr-10"></i>{{ env('APP_PHONE') }}
+                                        </a>
+                                    </div><br>
+                                    <div class="display-inline-block mrb-10">
+                                        <a href="#" class="text-light-gray"><i
+                                                class="fa fa-envelope-o mrr-10"></i>{{ env('APP_EMAIL') }}
+                                        </a>
+                                    </div>
                                     <div class="display-inline-block"><a href="#" class="text-light-gray"><i
-                                                class="fa fa-globe mrr-10"></i>www.domainname.com</a></div>
+                                                class="fa fa-globe mrr-10"></i>{{ route('index') }}
+                                        </a>
+                                    </div>
                                 </address>
                             </div>
                         </div>
@@ -681,8 +654,6 @@
                                     </div>
                                     <div class="post-content media-body align-self-center">
                                         <h5 class="text-light-gray mrb-10"><a href="#">Industrial Service</a></h5>
-                                        <h6 class="text-dark-light f-weight-500"><i class="fa fa-clock-o mrr-5"></i>22
-                                            Nov, 2019</h6>
                                     </div>
                                 </div>
                                 <div class="single-post media mrb-20">
@@ -691,8 +662,6 @@
                                     </div>
                                     <div class="post-content media-body align-self-center">
                                         <h5 class="text-light-gray mrb-10"><a href="#">Industrial Service</a></h5>
-                                        <h6 class="text-dark-light f-weight-500"><i class="fa fa-clock-o mrr-5"></i>22
-                                            Nov, 2019</h6>
                                     </div>
                                 </div>
                                 <div class="single-post media">
@@ -701,8 +670,6 @@
                                     </div>
                                     <div class="post-content media-body align-self-center">
                                         <h5 class="text-light-gray mrb-10"><a href="#">Industrial Service</a></h5>
-                                        <h6 class="text-dark-light f-weight-500"><i class="fa fa-clock-o mrr-5"></i>22
-                                            Nov, 2019</h6>
                                     </div>
                                 </div>
                             </div>
@@ -713,11 +680,8 @@
                                 <ul class="footer-widget-list">
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">About</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Service</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Policy</a></li>
                                     <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Whatsapp</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -727,16 +691,6 @@
                                 <ul class="opening-hours">
                                     <li>
                                         <p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Mon - Tue
-                                        </p>
-                                        <p>9:30 am - 6.00 pm</p>
-                                    </li>
-                                    <li>
-                                        <p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Wed - Thur
-                                        </p>
-                                        <p>9:30 am - 6.00 pm</p>
-                                    </li>
-                                    <li>
-                                        <p><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Fri - Sat
                                         </p>
                                         <p>9:30 am - 6.00 pm</p>
                                     </li>
@@ -758,8 +712,8 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="text-center">
-                                <span class="text-light-gray">Copyright © 2020 by <a class="text-primary-color"
-                                        target="_blank" href="https://themeforest.net/user/webextheme"> WebexTheme</a> |
+                                <span class="text-light-gray">Copyright © {{ date('Y') }} by
+                                    {{ env('APP_NAME') }} |
                                     All
                                     rights reserved </span>
                             </div>
