@@ -1,308 +1,154 @@
-<section id="home">
-    <div class="container-fluid p-0">
-
-        <!-- Slider Revolution Start -->
-        <div class="rev_slider_wrapper">
-            <div class="rev_slider" data-version="5.0">
-                <ul>
-
-                    <!-- SLIDE 1 -->
-                    <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default"
-                        data-easein="default" data-easeout="default" data-masterspeed="default"
-                        data-thumb="{{ asset('assets/images/stock/clean_left_mirror.jpg') }}" data-rotate="0"
-                        data-saveperformance="off" data-title="Slide 1" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{{ asset('assets/images/stock/clean_left_mirror.jpg') }}" alt=""
-                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                            class="rev-slidebg" data-bgparallax="10" data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway" id="rs-1-layer-1"
-                            data-x="['left']" data-hoffset="['30']" data-y="['middle']" data-voffset="['-110']"
-                            data-fontsize="['90']" data-lineheight="['110']" data-width="none" data-height="none"
-                            data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 7; white-space: nowrap; font-weight:700;">Complete car wash
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-left-theme-color-2-6px pl-20 pr-20"
-                            id="rs-1-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
-                            data-voffset="['-25']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 7; white-space: nowrap; font-weight:600;">The Best Car Wash in Abu Dubai
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-resizeme text-white" id="rs-1-layer-3" data-x="['left']"
-                            data-hoffset="['35']" data-y="['middle']" data-voffset="['35']"
-                            data-fontsize="['16','18',24']" data-lineheight="['28']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
-                            {!! env('APP_DESC') !!}
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption tp-resizeme" id="rs-1-layer-4" data-x="['left']" data-hoffset="['35']"
-                            data-y="['middle']" data-voffset="['100']" data-width="none" data-height="none"
-                            data-whitespace="nowrap" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a
-                                class="btn btn-colored btn-lg btn-flat btn-theme-colored border-left-theme-color-2-6px pl-20 pr-20"
-                                href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}">Book now</a>
-                        </div>
-                    </li>
-
-                    <!-- SLIDE 2 -->
-                    <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default"
-                        data-easein="default" data-easeout="default" data-masterspeed="default"
-                        data-thumb="{{ asset('assets/images/stock/headlight_wash.jpg') }}" data-rotate="0"
-                        data-saveperformance="off" data-title="Slide 2" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{{ asset('assets/images/stock/headlight_wash.jpg') }}" alt=""
-                            data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat"
-                            class="rev-slidebg" data-bgparallax="10" data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent-5 text-white font-raleway border-left-theme-color-2-6px border-right-theme-color-2-6px pl-30 pr-30"
-                            id="rs-2-layer-1" data-x="['center']" data-hoffset="['0']" data-y="['middle']"
-                            data-voffset="['-90']" data-fontsize="['28']" data-lineheight="['54']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;">
-                            We always provide you
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
-                            id="rs-2-layer-2" data-x="['center']" data-hoffset="['0']" data-y="['middle']"
-                            data-voffset="['-20']" data-fontsize="['48']" data-lineheight="['70']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;">
-                            Best car Cleaning services
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-resizeme text-white text-center" id="rs-2-layer-3" data-x="['center']"
-                            data-hoffset="['0']" data-y="['middle']" data-voffset="['50']"
-                            data-fontsize="['16','18',24']" data-lineheight="['28']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
-                            {!! env('APP_DESC') !!}
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption tp-resizeme" id="rs-2-layer-4" data-x="['center']" data-hoffset="['0']"
-                            data-y="['middle']" data-voffset="['115']" data-width="none" data-height="none"
-                            data-whitespace="nowrap" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a
-                                class="btn btn-default btn-circled btn-transparent pl-20 pr-20"
-                                href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}">Book now</a>
-                        </div>
-                    </li>
-
-                    <!-- SLIDE 3 -->
-                    <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default"
-                        data-easein="default" data-easeout="default" data-masterspeed="default"
-                        data-thumb="{{ asset('assets/images/stock/clean_back_mirror.jpg') }}" data-rotate="0"
-                        data-saveperformance="off" data-title="Slide 3" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{{ asset('assets/images/stock/clean_back_mirror.jpg') }}" alt=""
-                            data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"
-                            class="rev-slidebg" data-bgparallax="10" data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-right-theme-color-2-6px pr-20 pl-20"
-                            id="rs-3-layer-1" data-x="['right']" data-hoffset="['30']" data-y="['middle']"
-                            data-voffset="['-90']" data-fontsize="['64']" data-lineheight="['72']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 7; white-space: nowrap; font-weight:600;">Make Your Car
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme text-uppercase bg-dark-transparent-5 text-white font-raleway pl-10 pr-10"
-                            id="rs-3-layer-2" data-x="['right']" data-hoffset="['35']" data-y="['middle']"
-                            data-voffset="['-25']" data-fontsize="['32']" data-lineheight="['54']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 7; white-space: nowrap; font-weight:600;">Last longer &
-                            attractive
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-resizeme text-white text-right" id="rs-3-layer-3" data-x="['right']"
-                            data-hoffset="['35']" data-y="['middle']" data-voffset="['30']"
-                            data-fontsize="['16','18',24']" data-lineheight="['28']" data-width="none"
-                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
-                            data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
-                            data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
-                            {!! env('APP_DESC') !!}
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption tp-resizeme" id="rs-3-layer-4" data-x="['right']" data-hoffset="['35']"
-                            data-y="['middle']" data-voffset="['95']" data-width="none" data-height="none"
-                            data-whitespace="nowrap" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 5; white-space: nowrap; letter-spacing:1px;"><a
-                                class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20"
-                                href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}">Book now</a>
-                        </div>
-                    </li>
-
-                </ul>
+<!-- START REVOLUTION SLIDER 5.3.0.2 auto mode -->
+<div id="banner-slide" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
+    <div class="slotholder"></div>
+    <ul>
+        <!-- SLIDE  -->
+        <!-- SLIDE 1 -->
+        <li data-index="rs-01" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0"
+            data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+            data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-param1=""
+            data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+            data-param9="" data-param10="" data-description="">
+            <!-- MAIN IMAGE -->
+            <img src="{{ asset('assets/images/bg/2.jpg') }}" alt="" data-bgposition="center center"
+                data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
+                data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption title-slide color-white" id="slide-01-layer-1" data-x="['left','left','left','left']"
+                data-hoffset="['39','39','39','39']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['-105','-65','-77','-90']" data-fontsize="['55','52','45','35']"
+                data-lineheight="['64','57','50','40']" data-fontweight="['800','800','800','800']" data-width="none"
+                data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":200,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]"
+                style="z-index: 16; white-space: nowrap;">We <span class="text-primary-color">Provide</span> The
+                Best <br> Quality of Concrete products
             </div>
-            <!-- end .rev_slider -->
-        </div>
-        <script>
-            $(document).ready(function(e) {
-                $(".rev_slider").revolution({
-                    sliderType: "standard",
-                    sliderLayout: "auto",
-                    dottedOverlay: "none",
-                    delay: 5000,
-                    navigation: {
-                        keyboardNavigation: "off",
-                        keyboard_direction: "horizontal",
-                        mouseScrollNavigation: "off",
-                        onHoverStop: "off",
-                        touch: {
-                            touchenabled: "on",
-                            swipe_threshold: 75,
-                            swipe_min_touches: 1,
-                            swipe_direction: "horizontal",
-                            drag_block_vertical: false
-                        },
-                        arrows: {
-                            style: "zeus",
-                            enable: true,
-                            hide_onmobile: true,
-                            hide_under: 600,
-                            hide_onleave: true,
-                            hide_delay: 200,
-                            hide_delay_mobile: 1200,
-                            tmp: '<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                            left: {
-                                h_align: "left",
-                                v_align: "center",
-                                h_offset: 30,
-                                v_offset: 0
-                            },
-                            right: {
-                                h_align: "right",
-                                v_align: "center",
-                                h_offset: 30,
-                                v_offset: 0
-                            }
-                        },
-                        bullets: {
-                            enable: true,
-                            hide_onmobile: true,
-                            hide_under: 600,
-                            style: "metis",
-                            hide_onleave: true,
-                            hide_delay: 200,
-                            hide_delay_mobile: 1200,
-                            direction: "horizontal",
-                            h_align: "center",
-                            v_align: "bottom",
-                            h_offset: 0,
-                            v_offset: 30,
-                            space: 5,
-                            tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{ env('APP_NAME') }}</span>'
-                        }
-                    },
-                    responsiveLevels: [1240, 1024, 778],
-                    visibilityLevels: [1240, 1024, 778],
-                    gridwidth: [1170, 1024, 778, 480],
-                    gridheight: [650, 768, 960, 720],
-                    lazyType: "none",
-                    parallax: {
-                        origo: "slidercenter",
-                        speed: 1000,
-                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
-                        type: "scroll"
-                    },
-                    shadow: 0,
-                    spinner: "off",
-                    stopLoop: "on",
-                    stopAfterLoops: 0,
-                    stopAtSlide: -1,
-                    shuffle: "off",
-                    autoHeight: "off",
-                    fullScreenAutoWidth: "off",
-                    fullScreenAlignForce: "off",
-                    fullScreenOffsetContainer: "",
-                    fullScreenOffset: "0",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: false,
-                    }
-                });
-            });
-        </script>
-    </div>
-</section>
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption sub-title color-white" id="slide-01-layer-4" data-x="['left','left','left','left']"
+                data-hoffset="['37','37','37','37']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['30','30','30','0']" data-fontsize="['20',18','18','18']"
+                data-lineheight="['30','30','30','24']" data-fontweight="['400','400','400','400']" data-width="none"
+                data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":700,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap;">
+                {!! env('APP_DESC') !!}
+            </div>
+            <a href="{{ route('contact') }}" target="_self" class="tp-caption cs-btn-one btn-primary-color"
+                data-frames='[{"delay":1500,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-x="['left','left','left','left']"
+                data-hoffset="['36','36','36','36']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['130','130','120','80']" data-fontsize="['14','14','14','14']" data-width="['auto']"
+                data-height="['auto']">Contact Us
+            </a>
+            <!-- END LAYER LINK -->
+            <a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}" target="_self"
+                class="tp-caption cs-btn-one border btn-transparent"
+                data-frames='[{"delay":1500,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-x="['left','left','left','left']"
+                data-hoffset="['250','250','250','245']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['130','130','120','80']" data-fontsize="['14','14','14','14']" data-width="['auto']"
+                data-height="['auto']">Whatsapp
+            </a>
+        </li>
+        <!-- SLIDE 2 -->
+        <li data-index="rs-02" data-transition="random-static" data-slotamount="default" data-hideafterloop="0"
+            data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+            data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="HTML5 Video" data-param1=""
+            data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+            data-param9="" data-param10="" data-description="">
+            <!-- MAIN IMAGE -->
+            <img src="{{ asset('assets/images/bg/1.jpg') }}" alt="img3" data-bgposition="center center"
+                data-bgfit="cover" class="rev-slidebg" data-no-retina>
+            <div class="tp-caption title-slide color-white" id="slide-02-layer-1"
+                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']" data-voffset="['-120','-33','-90','-90']"
+                data-fontsize="['58','55','45','38']" data-lineheight="['65','57','55','45']"
+                data-fontweight="['800','800','800','800']" data-width="none" data-height="none"
+                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":200,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]"
+                style="z-index: 16; white-space: nowrap;">We <span class="text-primary-color">Ensure</span>
+                Quality <br> Industrial Solution
+            </div>
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption sub-title color-white" id="slide-02-layer-4"
+                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']" data-voffset="['15','0','10','10']"
+                data-fontsize="['20',18','18','17']" data-lineheight="['30','28','28','28']"
+                data-fontweight="['400','400','400','400']" data-width="none" data-height="none"
+                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                style="z-index: 17; white-space: nowrap;">We have almost 35+ years of experience for helping
+                <br> industrial services and business solutions
+            </div>
+            <a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}" target="_self"
+                class="tp-caption cs-btn-one btn-primary-color"
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":400,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']" data-voffset="['120','90','90','90']"
+                data-fontsize="['14',14','14','14']" data-width="['auto']" data-height="['auto']">Contact on Whatsapp
+            </a><!-- END LAYER LINK -->
+        </li>
+        <!-- SLIDE 3 -->
+        <li data-index="rs-03" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0"
+            data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+            data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-param1=""
+            data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+            data-param9="" data-param10="" data-description="">
+            <!-- MAIN IMAGE -->
+            <img src="{{ asset('assets/images/bg/2.jpg') }}" alt="" data-bgposition="center center"
+                data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
+                data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption title-slide color-white" id="slide-03-layer-1" data-x="['left','left','left','left']"
+                data-hoffset="['39','39','39','39']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['-105','-65','-77','-90']" data-fontsize="['55','52','45','35']"
+                data-lineheight="['64','57','50','40']" data-fontweight="['800','800','800','800']" data-width="none"
+                data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"delay":200,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]"
+                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]"
+                style="z-index: 16; white-space: nowrap;">We <span class="text-primary-color">Provide</span>
+                The Best <br> Quality of Concrete products
+            </div>
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption sub-title color-white" id="slide-03-layer-4" data-x="['left','left','left','left']"
+                data-hoffset="['37','37','37','37']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['30','30','30','0']" data-fontsize="['20',18','18','18']"
+                data-lineheight="['30','30','30','24']" data-fontweight="['400','400','400','400']" data-width="none"
+                data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":700,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap;">
+                {!! env('APP_DESC') !!}
+            </div>
+            <a href="#" target="_self" class="tp-caption cs-btn-one btn-primary-color"
+                data-frames='[{"delay":1500,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-x="['left','left','left','left']"
+                data-hoffset="['36','36','36','36']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['130','130','120','80']" data-fontsize="['14','14','14','14']" data-width="['auto']"
+                data-height="['auto']">Our Company
+            </a>
+            <!-- END LAYER LINK -->
+            <a href="#" target="_self" class="tp-caption cs-btn-one border btn-transparent"
+                data-frames='[{"delay":1500,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']" data-x="['left','left','left','left']"
+                data-hoffset="['250','250','250','245']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['130','130','120','80']" data-fontsize="['14','14','14','14']" data-width="['auto']"
+                data-height="['auto']">Contact Us
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<!-- END REVOLUTION SLIDER -->
