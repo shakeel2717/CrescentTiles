@@ -157,12 +157,12 @@
                     <div class="col-md-12 col-xl-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                         <div class="about-image">
                             <img class="img-full image-link mrb-lg-50 mrt-5"
-                                src="{{ asset('assets/images/about/about.png') }}" alt="">
+                                src="{{ asset('assets/images/slides/about.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-md-12 col-xl-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
                         <h5 class="mrb-15 text-primary-color text-underline">Welcome to {{ env('APP_NAME') }}</h5>
-                        <h2 class="mrb-25">Most Leading Industrial Products Provider.</h2>
+                        <h2 class="mrb-25">Industrial City with the most Modern Manufacturing Unit..</h2>
                         <p>{{ env('APP_NAME') }} is one of the pioneers in manufacturing ceramic and porcelain
                             tiles with Grannitto as its brand name. It’s operating since 1996 and has gained high
                             goodwill in the Building Material and Construction Industry not only in UAE but worldwide.
@@ -189,13 +189,14 @@
                             <div class="text-divider pdb-lg-105 pdb-md-45">
                                 <h5 class="text-primary-color text-underline mrb-15">Best Industrial Company</h5>
                                 <h2 class="mrt-0 large-text mrb-20">Why Choose Us?</h2>
-                                <p class="mrb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Deserunt rem sunt odit, cupiditate, ratione, praesentium minima, obcaecati eos vel
-                                    voluptatem ipsa necessitatibus eius. Repellat.</p>
+                                <p class="mrb-30">To become the top name in the related industry and maintain
+                                    the status of a global entity that provides the best solution in manufacturing
+                                    ceramic and porcelain tiles, that carries the idea of quality, design, and
+                                    stability, embedded in our brand.</p>
                                 <div class="skills">
                                     <div class="skill-item">
                                         <div class="skill-header">
-                                            <h6 class="skill-title">Welding Services</h6>
+                                            <h6 class="skill-title">Marbels Services</h6>
                                             <div class="skill-percentage">
                                                 <div class="count-box"><span class="count-text"
                                                         data-speed="2100" data-stop="95">0</span>%</div>
@@ -240,7 +241,7 @@
                         </div>
                         <div class="col-lg-5">
                             <img class="img-full mrt-misus-145 mrt-lg-0 d-none d-lg-block"
-                                src="{{ asset('assets/images/about/person.png') }}" alt="">
+                                src="{{ asset('assets/images/slides/man.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -267,37 +268,16 @@
             <div class="section-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="service-item">
-                                <img src="{{ asset('images/flaticons/1.png') }}" alt="">
-                                <h4 class="service-title"><a href="#">Petroleum and Gas</a></h4>
-                                <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting indstry. lpsum has been the</p>
-                                <a class="service-link" href="#">Read More<span
-                                        class="fa fa-long-arrow-right mrl-10"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="service-item">
-                                <img src="{{ asset('images/flaticons/2.png') }}" alt="">
-                                <h4 class="service-title"><a href="#">Metal Industry</a></h4>
-                                <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting indstry. lpsum has been the</p>
-                                <a class="service-link" href="#">Read More<span
-                                        class="fa fa-long-arrow-right mrl-10"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="service-item">
-                                <img src="{{ asset('images/flaticons/3.png') }}" alt="">
-                                <h4 class="service-title"><a href="#">Civil Engineering</a></h4>
-                                <p class="mrb-0">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting indstry. lpsum has been the</p>
-                                <a class="service-link" href="#">Read More<span
-                                        class="fa fa-long-arrow-right mrl-10"></span></a>
-                            </div>
-                        </div>
+                        <x-product img="marbel" name="MARBLE" />
+                        <x-product img="cement" name="CEMENT" />
+                        <x-product img="timber" name="TIMBER" />
+                        <x-product img="cascadacategory" name="CASCADE" />
+                        <x-product img="decor" name="DECORE" />
+                        <x-product img="color" name="COLORE" />
+                        <x-product img="heavy" name="HEAVY DUTY" />
+                        <x-product img="LIFE-STYLE-IMAGE-Custom-1" name="CERAMIC" />
                     </div>
+
                 </div>
             </div>
         </section>
@@ -314,7 +294,7 @@
                             <div class="section-title-block">
                                 <h5 class="text-primary-color text-underline section-icon mrb-15">Service We Provide
                                 </h5>
-                                <h2 class="">Let's Have a Look At Our Latest Projects.</h2>
+                                <h2 class="">Let's Have a Look At Our Gallery.</h2>
                             </div>
                         </div>
                         <div class="col"></div>
@@ -325,102 +305,18 @@
                 <div class="container">
                     <div class="row grid wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms"
                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; position: relative; height: 841.094px;">
-                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing"
-                            style="position: absolute; left: 0%; top: 0px;">
-                            <div class="project-item mrb-30">
-                                <div class="project-thumb">
-                                    <img class="img-full"
-                                        src="{{ asset('assets/images/project/project_01.jpg') }}" alt="">
-                                    <div class="link-single-page">
-                                        <a href="#"><i class="webex-icon-attachment1"></i></a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h4><a href="#">Building Construction</a></h4>
-                                    <h6>- Construction</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item business chemical"
-                            style="position: absolute; left: 33.3333%; top: 0px;">
-                            <div class="project-item mrb-30">
-                                <div class="project-thumb">
-                                    <img class="img-full"
-                                        src="{{ asset('assets/images/project/project_02.jpg') }}" alt="">
-                                    <div class="link-single-page">
-                                        <a href="#"><i class="webex-icon-attachment1"></i></a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h4><a href="#">Metal Industry</a></h4>
-                                    <h6>- Industry</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item industry construction"
-                            style="position: absolute; left: 66.6667%; top: 0px;">
-                            <div class="project-item mrb-30">
-                                <div class="project-thumb">
-                                    <img class="img-full"
-                                        src="{{ asset('assets/images/project/project_03.jpg') }}" alt="">
-                                    <div class="link-single-page">
-                                        <a href="#"><i class="webex-icon-attachment1"></i></a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h4><a href="#">Bridge Construction</a></h4>
-                                    <h6>- Building</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item construction business"
-                            style="position: absolute; left: 0%; top: 420.547px;">
-                            <div class="project-item mrb-30">
-                                <div class="project-thumb">
-                                    <img class="img-full"
-                                        src="{{ asset('assets/images/project/project_04.jpg') }}" alt="">
-                                    <div class="link-single-page">
-                                        <a href="#"><i class="webex-icon-attachment1"></i></a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h4><a href="#">Car Manufacturing</a></h4>
-                                    <h6>- Manufacturing</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing"
-                            style="position: absolute; left: 33.3333%; top: 420.547px;">
-                            <div class="project-item mrb-30">
-                                <div class="project-thumb">
-                                    <img class="img-full"
-                                        src="{{ asset('assets/images/project/project_05.jpg') }}" alt="">
-                                    <div class="link-single-page">
-                                        <a href="#"><i class="webex-icon-attachment1"></i></a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h4><a href="#">Metal Industry</a></h4>
-                                    <h6>- Industry</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item industry manufacturing"
-                            style="position: absolute; left: 66.6667%; top: 420.547px;">
-                            <div class="project-item mrb-30">
-                                <div class="project-thumb">
-                                    <img class="img-full"
-                                        src="{{ asset('assets/images/project/project_06.jpg') }}" alt="">
-                                    <div class="link-single-page">
-                                        <a href="#"><i class="webex-icon-attachment1"></i></a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h4><a href="#">Building Construction</a></h4>
-                                    <h6>- Construction</h6>
-                                </div>
-                            </div>
-                        </div>
+                        <x-gallery img="1" name="Main" />
+                        <x-gallery img="2" name="Main" />
+                        <x-gallery img="3" name="Main" />
+                        <x-gallery img="4" name="Main" />
+                        <x-gallery img="5" name="Main" />
+                        <x-gallery img="6" name="Main" />
+                        <x-gallery img="7" name="Main" />
+                        <x-gallery img="8" name="Main" />
+                        <x-gallery img="9" name="Main" />
+                        <x-gallery img="10" name="Main" />
+                        <x-gallery img="11" name="Main" />
+                        <x-gallery img="12" name="Main" />
                     </div>
                 </div>
             </div>

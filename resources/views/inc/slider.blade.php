@@ -10,7 +10,7 @@
             data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
             data-param9="" data-param10="" data-description="">
             <!-- MAIN IMAGE -->
-            <img src="{{ asset('assets/images/bg/2.jpg') }}" alt="" data-bgposition="center center"
+            <img src="{{ asset('assets/images/slides/1.jpg') }}" alt="" data-bgposition="center center"
                 data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
                 data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                 class="rev-slidebg" data-no-retina>
@@ -62,7 +62,7 @@
             data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
             data-param9="" data-param10="" data-description="">
             <!-- MAIN IMAGE -->
-            <img src="{{ asset('assets/images/bg/1.jpg') }}" alt="img3" data-bgposition="center center"
+            <img src="{{ asset('assets/images/slides/2.jpg') }}" alt="img3" data-bgposition="center center"
                 data-bgfit="cover" class="rev-slidebg" data-no-retina>
             <div class="tp-caption title-slide color-white" id="slide-02-layer-1"
                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -104,7 +104,7 @@
             data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
             data-param9="" data-param10="" data-description="">
             <!-- MAIN IMAGE -->
-            <img src="{{ asset('assets/images/bg/2.jpg') }}" alt="" data-bgposition="center center"
+            <img src="{{ asset('assets/images/slides/3.jpg') }}" alt="" data-bgposition="center center"
                 data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
                 data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
                 class="rev-slidebg" data-no-retina>

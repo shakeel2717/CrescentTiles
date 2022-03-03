@@ -3210,7 +3210,7 @@ select {
 }
 
 .news-wrapper {
-  box-shadow: 1px 1px 16px 6px #e8e8e8;
+  box-shadow: 1px 1px 6px 6px #000000;
 }
 
 .news-wrapper:hover .news-thumb .news-date {
