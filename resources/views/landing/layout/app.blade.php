@@ -49,7 +49,7 @@
                         <div class="col-md-12 d-flex align-items-center justify-content-between">
                             <a class="navbar-brand logo" href="index.html">
                                 <img id="logo-image" class="img-center"
-                                    src="{{ asset('assets/images/logo.png') }}" alt="">
+                                    src="{{ asset('assets/images/brand/logo-dark.svg') }}" alt="">
                             </a>
                             <div class="topbar-info-area d-none d-sm-flex align-items-center justify-content-between">
                                 <div class="d-none d-md-flex align-items-center mr-3">
@@ -65,7 +65,7 @@
                                     <div>
                                         <h6>Email Us</h6>
                                         <a class="text-gray"
-                                            href="mailto:{{ env('APP_ADDRESS') }}">{{ env('APP_ADDRESS') }}</a>
+                                            href="mailto:{{ env('APP_EMAIL') }}">{{ env('APP_EMAIL') }}</a>
                                     </div>
                                 </div>
                                 <div class="d-none d-lg-flex align-items-center">
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="side-panel-logo mrb-30">
                                     <a href="index.html">
-                                        <img src="{{ asset('assets/images/logo-sidebar-dark.png') }}" alt="" />
+                                        <img src="{{ asset('assets/images/brand/logo-dark.svg') }}" alt="" />
                                     </a>
                                 </div>
                                 <div class="side-info mrb-30">
@@ -326,7 +326,7 @@
         <!-- Funfact Section Start -->
         <section class="pdt-120 pdb-50 pdb-sm-40 section-white-typo funfact-section"
             data-background="{{ asset('assets/images/bg/2.jpg') }}" data-overlay-dark="5">
-            <img class="img-full section-object" src="{{ asset('assets/images/object2.png') }}" alt="">
+            <img class="img-full section-object" src="{{ asset('assets/images/slides/tile_man.png') }}" alt="">
             <div class="section-content">
                 <div class="container">
                     <div class="row">
@@ -336,8 +336,8 @@
                                 <div class="icon">
                                     <span class="webexflaticon webex-flaticon-briefcase-1"></span>
                                 </div>
-                                <h2 class="counter">1450</h2>
-                                <h5 class="title">Projects Succeed</h5>
+                                <h2 class="counter">32</h2>
+                                <h5 class="title">Kinds of Tiles</h5>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="200ms"
@@ -360,16 +360,7 @@
                                 <h5 class="title">Awards Achieved</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp d-xl-none" data-wow-delay="600ms"
-                            data-wow-duration="800ms">
-                            <div class="funfact text-center mrb-md-70 mrb-60">
-                                <div class="icon">
-                                    <span class="webexflaticon webex-flaticon-trophy-1"></span>
-                                </div>
-                                <h2 class="counter">1280</h2>
-                                <h5 class="title">Awards Achieved</h5>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -419,19 +410,6 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <input type="email" placeholder="Email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <select name="categories" class="custom-select-categories" required>
-                                                <option value="">- Choose Products -</option>
-                                                <option>Building Construction</option>
-                                                <option>Metal Industry</option>
-                                                <option>Oil & Gas</option>
-                                                <option>Lather Factory</option>
-                                                <option>Hard Metal</option>
-                                                <option>Manufacturing</option>
-                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -521,7 +499,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="widget footer-widget">
-                                <img src="images/logo-footer.png" alt="" class="mrb-20">
+                                <img src="{{ asset('assets/images/brand/logo-light.svg') }}" alt="" class="mrb-20">
                                 <address class="mrb-25">
                                     <p class="text-light-gray">{{ env('APP_ADDRESS') }}</p>
                                     <div class="display-inline-block mrb-10">
