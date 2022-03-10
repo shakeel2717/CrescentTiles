@@ -149,7 +149,6 @@
     <div id="banner-container" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export"
         data-source="gallery"
         style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-        @include('inc.slider')
         @yield('body')
         <!-- Call to Action End -->
         <!-- Footer Area Start -->

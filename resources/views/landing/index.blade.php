@@ -119,7 +119,22 @@
             <div class="container">
                 <div class="row">
                     @foreach ($categories as $category)
-                        <x-product name="{{ $category->name }}" img="{{ $category->picture }}" id="{{ $category->id }}" />
+                        <div class="col-md-4">
+                            <div class="news-wrapper mrb-30">
+                                <div class="news-thumb">
+                                    <img src="{{ asset('assets/category/' . $category->picture) }}" class="img-full"
+                                        alt="blog">
+                                    <div class="news-date">
+                                        <div class="entry-date">Category</div>
+                                    </div>
+                                </div>
+                                <div class="news-description">
+                                    <h4 class="the-title mrb-20"><a
+                                            href="{{ route('category.show', ['category' => $category->id]) }}">{{ $category->name }}</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
                     @endforeach
                 </div>
             </div>
