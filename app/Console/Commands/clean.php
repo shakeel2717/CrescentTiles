@@ -49,7 +49,7 @@ class clean extends Command
         // create categories
         $category = new Category();
         $category->name = 'Paving Stones';
-        $category->picture = 'prod.jpg';
+        $category->picture = '1.jpg';
         $category->save();
 
         $product = new Product();
@@ -66,39 +66,79 @@ class clean extends Command
         $product->description = "Haulage company yards, roads, car parks, but also factory buildings and warehouses: this is where Uni Coloc® Interlocking Pavers are employed. The Uni Coloc® Interlocking Paver makes it possible to lay an extremely solid anchor bond; moreover, since it can be laid by machine, it is highly economical. The Uni Coloc® Interlocking Paver is laid most economically using the Uni Hydraulic Clamp, which can be mounted to almost every construction machine, such as wheel loaders, small excavators, etc. The Uni Coloc® Interlocking Paver can also be economically laid using other standard paving machines. Surfaces with high traffic load-bearing capacity can be durably laid with the interlocking anchor bond paving system. Moreover, its mode of construction is extremely economical since the pavers can be laid quickly and safely by machine.";
         $product->save();
 
+        $product = new Product();
+        $product->category_id = $category->id;
+        $product->name = "Easy To Lay, Also Suitable For Machine Laying";
+        $product->picture = "3.jpg";
+        $product->description = "Haulage company yards, roads, car parks, but also factory buildings and warehouses: this is where Uni Coloc® Interlocking Pavers are employed. The Uni Coloc® Interlocking Paver makes it possible to lay an extremely solid anchor bond; moreover, since it can be laid by machine, it is highly economical. The Uni Coloc® Interlocking Paver is laid most economically using the Uni Hydraulic Clamp, which can be mounted to almost every construction machine, such as wheel loaders, small excavators, etc. The Uni Coloc® Interlocking Paver can also be economically laid using other standard paving machines. Surfaces with high traffic load-bearing capacity can be durably laid with the interlocking anchor bond paving system. Moreover, its mode of construction is extremely economical since the pavers can be laid quickly and safely by machine.";
+        $product->save();
+
+        $product = new Product();
+        $product->category_id = $category->id;
+        $product->name = "The Timeless Paving Stone";
+        $product->picture = "4.jpg";
+        $product->description = "Haulage company yards, roads, car parks, but also factory buildings and warehouses: this is where Uni Coloc® Interlocking Pavers are employed. The Uni Coloc® Interlocking Paver makes it possible to lay an extremely solid anchor bond; moreover, since it can be laid by machine, it is highly economical. The Uni Coloc® Interlocking Paver is laid most economically using the Uni Hydraulic Clamp, which can be mounted to almost every construction machine, such as wheel loaders, small excavators, etc. The Uni Coloc® Interlocking Paver can also be economically laid using other standard paving machines. Surfaces with high traffic load-bearing capacity can be durably laid with the interlocking anchor bond paving system. Moreover, its mode of construction is extremely economical since the pavers can be laid quickly and safely by machine.";
+        $product->save();
+
+        $product = new Product();
+        $product->category_id = $category->id;
+        $product->name = "The Decorative Paving Stone";
+        $product->picture = "5.jpg";
+        $product->description = "Haulage company yards, roads, car parks, but also factory buildings and warehouses: this is where Uni Coloc® Interlocking Pavers are employed. The Uni Coloc® Interlocking Paver makes it possible to lay an extremely solid anchor bond; moreover, since it can be laid by machine, it is highly economical. The Uni Coloc® Interlocking Paver is laid most economically using the Uni Hydraulic Clamp, which can be mounted to almost every construction machine, such as wheel loaders, small excavators, etc. The Uni Coloc® Interlocking Paver can also be economically laid using other standard paving machines. Surfaces with high traffic load-bearing capacity can be durably laid with the interlocking anchor bond paving system. Moreover, its mode of construction is extremely economical since the pavers can be laid quickly and safely by machine.";
+        $product->save();
+
+        $product = new Product();
+        $product->category_id = $category->id;
+        $product->name = "The Exclusive Paving System";
+        $product->picture = "6.jpg";
+        $product->description = "Haulage company yards, roads, car parks, but also factory buildings and warehouses: this is where Uni Coloc® Interlocking Pavers are employed. The Uni Coloc® Interlocking Paver makes it possible to lay an extremely solid anchor bond; moreover, since it can be laid by machine, it is highly economical. The Uni Coloc® Interlocking Paver is laid most economically using the Uni Hydraulic Clamp, which can be mounted to almost every construction machine, such as wheel loaders, small excavators, etc. The Uni Coloc® Interlocking Paver can also be economically laid using other standard paving machines. Surfaces with high traffic load-bearing capacity can be durably laid with the interlocking anchor bond paving system. Moreover, its mode of construction is extremely economical since the pavers can be laid quickly and safely by machine.";
+        $product->save();
+
+        $product = new Product();
+        $product->category_id = $category->id;
+        $product->name = "For Gardens And Parks";
+        $product->picture = "7.jpg";
+        $product->description = "Haulage company yards, roads, car parks, but also factory buildings and warehouses: this is where Uni Coloc® Interlocking Pavers are employed. The Uni Coloc® Interlocking Paver makes it possible to lay an extremely solid anchor bond; moreover, since it can be laid by machine, it is highly economical. The Uni Coloc® Interlocking Paver is laid most economically using the Uni Hydraulic Clamp, which can be mounted to almost every construction machine, such as wheel loaders, small excavators, etc. The Uni Coloc® Interlocking Paver can also be economically laid using other standard paving machines. Surfaces with high traffic load-bearing capacity can be durably laid with the interlocking anchor bond paving system. Moreover, its mode of construction is extremely economical since the pavers can be laid quickly and safely by machine.";
+        $product->save();
+
         $category = new Category();
         $category->name = 'Surface Treatment';
-        $category->picture = 'prod.jpg';
+        $category->picture = '2.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Paving Tiles';
-        $category->picture = 'prod.jpg';
+        $category->picture = '3.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Planters';
-        $category->picture = 'prod.jpg';
+        $category->picture = '4.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Building Blocks';
-        $category->picture = 'prod.jpg';
+        $category->picture = '5.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = "Wall Blocks";
-        $category->picture = 'prod.jpg';
+        $category->picture = '6.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = "Retaining Wall System";
-        $category->picture = 'prod.jpg';
+        $category->picture = '7.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = "Kerbstones";
-        $category->picture = 'prod.jpg';
+        $category->picture = '8.jpg';
+        $category->save();
+
+        $category = new Category();
+        $category->name = "Sedra Sand";
+        $category->picture = '9.jpg';
         $category->save();
 
 
