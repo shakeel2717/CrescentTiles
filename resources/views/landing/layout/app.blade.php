@@ -6,11 +6,10 @@
     <meta name="author" content="Loxicat">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Loxicat Construction & Industrial HTML5 Template">
-    <meta name="keywords"
-        content="construction, industry, industrial, factory, business, material,  mechanical,  engineering, gas, chemical" />
-    <title>Loxicat || Construction & Industrial HTML5 Template</title>
-    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+    <meta name="description" content="{{ env('APP_DESC') }}">
+    <meta name="keywords" content="tiles, stones, briks, raods, contracts" />
+    <title>{{ env('APP_NAME') }} || {{ env('APP_DESC') }}</title>
+    <link href="{{ asset('assets/images/brand/favi.svg') }}" rel="shortcut icon" type="image/png">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/revolution/css/layers.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/revolution/css/settings.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/revolution/css/navigation.css') }}">
@@ -158,7 +157,8 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="widget footer-widget">
-                                <img src="{{ asset('assets/images/brand/logo-light.svg') }}" alt="" class="mrb-20">
+                                <img src="{{ asset('assets/images/brand/logo-light.svg') }}" alt=""
+                                    class="mrb-20">
                                 <address class="mrb-25">
                                     <p class="text-light-gray">{{ env('APP_ADDRESS') }}</p>
                                     <div class="display-inline-block mrb-10">
