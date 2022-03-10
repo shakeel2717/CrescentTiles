@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="row">
                     @foreach ($categories as $category)
-                        <x-product img="{{ $category->picture }}" name="{{ $category->name }}" />
+                        <x-product name="{{ $category->name }}" img="{{ $category->picture }}" id="{{ $category->id }}" />
                     @endforeach
                 </div>
             </div>

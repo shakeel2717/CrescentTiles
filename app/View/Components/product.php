@@ -6,17 +6,19 @@ use Illuminate\View\Component;
 
 class product extends Component
 {
-    public $img;
     public $name;
+    public $img;
+    public $id;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($img,$name)
+    public function __construct($name,$img,$id)
     {
-        $this->img = $img;
         $this->name = $name;
+        $this->img = $img;
+        $this->id = $id;
     }
 
     /**
