@@ -39,6 +39,7 @@ class clean extends Command
      */
     public function handle()
     {
+        Artisan::call('migrate:fresh');
         Artisan::call('cache:clear');
         Artisan::call('config:clear');
         Artisan::call('view:clear');
@@ -47,34 +48,42 @@ class clean extends Command
         // create categories
         $category = new Category();
         $category->name = 'Paving Stones';
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Surface Treatment';
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Paving Tiles';
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Planters';
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = 'Building Blocks';
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = "Wall Blocks";
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = "Retaining Wall System";
+        $category->picture = 'prod.jpg';
         $category->save();
 
         $category = new Category();
         $category->name = "Kerbstones";
+        $category->picture = 'prod.jpg';
         $category->save();
 
 

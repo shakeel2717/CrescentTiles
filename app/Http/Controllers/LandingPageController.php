@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
     public function index()
     {
-        return view('landing.index');
+        $categories = Category::get();
+        return view('landing.index',compact('categories'));
     }
 
 

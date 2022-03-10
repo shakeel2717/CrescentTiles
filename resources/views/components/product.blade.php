@@ -1,7 +1,7 @@
-<div class="col-md-3">
+<div class="col-md-4">
     <div class="news-wrapper mrb-30">
         <div class="news-thumb">
-            <img src="{{ asset('assets/images/products/'.$img.".jpg") }}"
+            <img src="{{ asset('assets/products/'.$img) }}"
                 class="img-full" alt="blog">
             <div class="news-date">
                 <div class="entry-date">Product</div>

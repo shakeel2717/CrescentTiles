@@ -1,733 +1,328 @@
 @extends('landing.layout.app')
 @section('body')
     @include('inc.slider')
-    <!-- Section: About -->
-    <section>
-        <div class="container pb-0">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-40 wow fadeInUp" data-margin-top="-80px"
-                        data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img class="img-fullwidth" src="{{ asset('assets/images/stock/full_car_in.jpg') }}" alt="">
-                        <div class="bg-lighter border-1px p-20 pt-0 mb-sm-180">
-                            <h4 class="font-weight-700 mt-20">Experienced Service</h4>
-                            <p>{!! env('APP_DESC') !!}</p>
-                            <a href="{{ route('contact') }}" class="btn btn-sm btn-theme-colored">Contact us</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-40 wow fadeInUp" data-margin-top="-80px"
-                        data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img class="img-fullwidth" src="{{ asset('assets/images/stock/clean_tire.jpg') }}" alt="">
-                        <div class="bg-lighter border-1px p-20 pt-0 mb-sm-180">
-                            <h4 class="font-weight-700 mt-20">Wheel & Tire Cleaning</h4>
-                            <p>{!! env('APP_DESC') !!}</p>
-                            <a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                class="btn btn-sm btn-theme-colored">Contact Agent</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 maxwidth500 mb-sm-0 wow fadeInUp" data-margin-top="-80px"
-                        data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img class="img-fullwidth" src="{{ asset('assets/images/stock/black_tire.jpg') }}" alt="">
-                        <div class="bg-lighter border-1px p-20 pt-0">
-                            <h4 class="font-weight-700 mt-20">Car Body Wash</h4>
-                            <p>{!! env('APP_DESC') !!}</p>
-                            <a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                class="btn btn-sm btn-theme-colored">Book now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: About -->
-    <section class="">
-        <div class="container">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h2 class="text-uppercase mt-0 font-weight-600">Welcome To <span
-                                class="text-theme-color-2">{{ env('APP_NAME') }}</span><br> in Abu Dubai</h2>
-                        <h4 class="text-gray-dimgray font-weight-400"><em>We are using non-abrasive and non-toxic natural
-                                washing chemicals. We have in-house developed and manufactured cleaning products.</em>
-                        </h4>
-                        <p>Car wash without moving the car from its parking spot. Have your perfectly cleaned, while you
-                            leave your car for shopping or other activities. Our washing cart do not leave any dirt or water
-                            on the floor.</p>
-                        <p>Our crew members are all trained and skilled and fully equipped with equipment and supplies
-                            needed that we can deliver the best results.</p>
-                        <a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                            class="btn btn-flat btn-theme-colored text-uppercase mt-20 mb-sm-30 border-left-theme-color-2-4px">Book
-                            now</a>
-                    </div>
-                    <div class="col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="row mb-10">
-                            <div class="col-md-12">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/stock/hero.jpg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 pr-5 pr-sm-15 mb-sm-10">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/stock/left_side_mirror.jpg') }}"
-                                    alt="">
-                            </div>
-                            <div class="col-md-6 pl-5 pl-sm-15">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/stock/tire_air_clean.jpg') }}"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Section: About -->
-    <section class="">
-        <div class="container">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="row mb-10">
-                            <div class="col-md-12">
-                                <img class="img-fullwidth" src="{{ asset('assets/images/stock/front_shower.jpg') }}"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h2 class="text-uppercase mt-0 font-weight-600">MANUAL <span class="text-theme-color-2">and
-                                Complete</span><br> CAR WASH Service</h2>
-                        </h4>
-                        <p>Car wash without moving the car from its parking spot. Have your car perfectly cleaned, while you
-                            leave for shopping or other activities. Our washing carts do not leave any dirt or water on the
-                            floor. Our washing method is Eco-friendly, since our requirement for water is only 1 liter for a
-                            full wash. We are saving around 50 liters of water in each car wash compared to the traditional
-                            car wash. Our crew members are all trained and skilled and fully equipped with all the supplies
-                            needed to deliver the best results..</p>
-                        <a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                            class="btn btn-flat btn-theme-colored text-uppercase mt-20 mb-sm-30 border-left-theme-color-2-4px">Book
-                            now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Section: Practice Areas -->
-    <section id="services" class="bg-lighter">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-uppercase mb-0">Best Carfix &amp; Repair Template</p>
-                        <div class="title-icon">
-                            <i class="flaticon-carrepair-tool-6 font-48"></i>
-                        </div>
-                        <h2 class="text-uppercase text-theme-colored title line-bottom">Our <span
-                                class="text-theme-color-2 font-weight-400">Services</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Car Polish</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Car Wash</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Mobile car wash</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Car Ceramic and Coating</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Hand Waxing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Window Tinting </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Interior Cleaning </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Engine Oil Change </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="icon-box p-10 pl-20 pr-15 mb-20 bg-white">
-                            <a class="mb-0 line-bottom" href="#">
-                                <i class="flaticon-carrepair-car-washing-machine text-theme-colored"></i>
-                            </a>
-                            <h3 class="icon-box-title mt-10 mb-10 text-uppercase">Cooling Paper </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi qui
-                                inventore, cumque!<a href="https://web.whatsapp.com/send?phone={{ env('APP_WHATSAPP') }}"
-                                    class="btn-read-more text-theme-colored"><br> Contact now</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Divider: Funfact -->
-    <section class="divider parallax layer-overlay overlay-theme-colored-9"
-        data-bg-img="{{ asset('assets/images/bg/bg2.jpg') }}" data-parallax-ratio="0.7">
+    <!-- About Section Start -->
+    <section class="about-section pdt-110 pdb-80 pdb-lg-100 bg-center-bottom" data-background="images/bg/ac2.png">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-car mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="754"
-                            class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase">Vehicles Serviced</h5>
+                <div class="col-md-12 col-xl-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
+                    <div class="about-image">
+                        <img class="img-full image-link mrb-lg-50 mrt-5"
+                            src="{{ asset('assets/images/slides/about.png') }}" alt="">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-users mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="675"
-                            class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase">Happy Clients</h5>
-                    </div>
+                <div class="col-md-12 col-xl-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
+                    <h5 class="mrb-15 text-primary-color text-underline">Welcome to {{ env('APP_NAME') }}</h5>
+                    <h2 class="mrb-25">Industrial City with the most Modern Manufacturing Unit..</h2>
+                    <p>{{ env('APP_NAME') }} is one of the pioneers in manufacturing ceramic and porcelain
+                        tiles with Grannitto as its brand name. It’s operating since 1996 and has gained high
+                        goodwill in the Building Material and Construction Industry not only in UAE but worldwide.
+                    </p>
+                    <ul class="order-list primary-color">
+                        <li>Quality Control System, 100% Satisfaction Guarantee</li>
+                        <li>Expertise & Innovation from a truly global company</li>
+                        <li>Leading Industrial Services Provider Company</li>
+                        <li>Highly Professional Staff, Accurate Testing Processes</li>
+                    </ul>
+                    <a href="{{ route('about') }}" class="cs-btn-one btn-lg mrt-30">About Us</a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-like2 mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="1248"
-                            class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase">People Likes</h5>
+            </div>
+
+        </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Divider Section Start -->
+    <section class="bg-primary-color" data-background="{{ asset('assets/images/bg/dot-map.png') }}">
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 mrb-md-110 mrb-sm-110">
+                        <div class="text-divider pdb-lg-105 pdb-md-45">
+                            <h5 class="text-primary-color text-underline mrb-15">Best Industrial Company</h5>
+                            <h2 class="mrt-0 large-text mrb-20">Why Choose Us?</h2>
+                            <p class="mrb-30">To become the top name in the related industry and maintain
+                                the status of a global entity that provides the best solution in manufacturing
+                                ceramic and porcelain tiles, that carries the idea of quality, design, and
+                                stability, embedded in our brand.</p>
+                            <div class="skills">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">Marbels Services</h6>
+                                        <div class="skill-percentage">
+                                            <div class="count-box"><span class="count-text" data-speed="2100"
+                                                    data-stop="95">0</span>%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner">
+                                            <div class="bar progress-line" data-width="95"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">Industrial Service</h6>
+                                        <div class="skill-percentage">
+                                            <div class="count-box"><span class="count-text" data-speed="1900"
+                                                    data-stop="96">0</span>%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner">
+                                            <div class="bar progress-line" data-width="96"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">Construction Works</h6>
+                                        <div class="skill-percentage">
+                                            <div class="count-box"><span class="count-text" data-speed="1800"
+                                                    data-stop="90">0</span>%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner">
+                                            <div class="bar progress-line" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                    <div class="funfact text-center">
-                        <i class="pe-7s-cup mt-5 text-theme-color-2"></i>
-                        <h2 data-animation-duration="2000" data-value="12"
-                            class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                        <h5 class="text-white text-uppercase">Awards Won</h5>
+                    <div class="col-lg-5">
+                        <img class="img-full mrt-misus-145 mrt-lg-0 d-none d-lg-block"
+                            src="{{ asset('assets/images/slides/man.png') }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Divider Section End -->
 
-    <!-- Section: Gallery -->
-    <section id="gallery">
-        <div class="container">
-            <div class="section-title">
+    <section class="service-section pdt-110 pdt-lg-105 pdb-80" data-background="{{ asset('assets/images/bg/2.jpg') }}"
+        data-overlay-dark="5" style="background-image: url(&quot;{{ asset('assets/images/bg/2.jpg') }}&quot;);">
+        <div class="section-title text-center">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-uppercase mb-0">Best Carfix &amp; Repair Template</p>
-                        <div class="title-icon">
-                            <i class="flaticon-carrepair-repair-1 font-48"></i>
-                        </div>
-                        <h2 class="text-uppercase text-theme-colored title line-bottom">Our Work<span
-                                class="text-theme-color-2 font-weight-400"> Gllery</span></h2>
+                    <div class="col"></div>
+                    <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms"
+                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <h5 class="text-primary-color text-underline section-icon mrb-15">Services We Offer</h5>
+                        <h2 class="text-white">We Provide The Best Products For Your Business</h2>
                     </div>
+                    <div class="col"></div>
                 </div>
             </div>
-            <div class="section-content">
+        </div>
+        <div class="section-content">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div id="grid" class="gallery-isotope grid-4 gutter clearfix">
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/black_tire.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/black_tire.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/clean_back_mirror.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/clean_back_mirror.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/clean_front_mirror.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/clean_front_mirror.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/clean_headlight.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/clean_headlight.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/clean_left_mirror.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/clean_left_mirror.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/clean_tire.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/clean_tire.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/engine_clean.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/engine_clean.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/front_shower.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/front_shower.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/full_car_in.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/full_car_in.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/headlight_wash.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/headlight_wash.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/inside_clean.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/inside_clean.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/left_side_mirror.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/left_side_mirror.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/seat_clean.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/seat_clean.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="gallery-item wheel">
-                                <div class="work-gallery">
-                                    <div class="gallery-thumb">
-                                        <img class="img-fullwidth" alt=""
-                                            src="{{ asset('assets/images/stock/tire_air_clean.jpg') }}">
-                                        <div class="gallery-overlay"></div>
-                                        <div class="gallery-contect">
-                                            <ul class="styled-icons icon-bordered icon-circled icon-sm">
-                                                <li><a data-rel="prettyPhoto"
-                                                        href="{{ asset('assets/images/stock/tire_air_clean.jpg') }}"><i
-                                                            class="fa fa-arrows"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                    @foreach ($categories as $category)
+                        <x-product img="{{ $category->picture }}" name="{{ $category->name }}" />
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-section pdt-105 pdb-80" data-background="{{ asset('assets/images/bg/abs-bg5.png') }}"
+        style="background-image: url(&quot;images/bg/abs-bg5.png&quot;);">
+        <div class="section-title text-center wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms"
+            style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+            <div class="container">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-xl-6">
+                        <div class="section-title-block">
+                            <h5 class="text-primary-color text-underline section-icon mrb-15">Service We Provide
+                            </h5>
+                            <h2 class="">Let's Have a Look At Our Gallery.</h2>
                         </div>
                     </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="container">
+                <div class="row grid wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms"
+                    style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; position: relative; height: 841.094px;">
+                    <x-gallery img="1" name="Main" />
+                    <x-gallery img="2" name="Main" />
+                    <x-gallery img="3" name="Main" />
+                    <x-gallery img="4" name="Main" />
+                    <x-gallery img="5" name="Main" />
+                    <x-gallery img="6" name="Main" />
+                    <x-gallery img="7" name="Main" />
+                    <x-gallery img="8" name="Main" />
+                    <x-gallery img="9" name="Main" />
+                    <x-gallery img="10" name="Main" />
+                    <x-gallery img="11" name="Main" />
+                    <x-gallery img="12" name="Main" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="">
-        <div class="container">
-            <div class="section-content">
+    <!-- Project Section End -->
+    <!-- Funfact Section Start -->
+    <section class="pdt-120 pdb-50 pdb-sm-40 section-white-typo funfact-section"
+        data-background="{{ asset('assets/images/bg/2.jpg') }}" data-overlay-dark="5">
+        <img class="img-full section-object" src="{{ asset('assets/images/slides/tile_man.png') }}" alt="">
+        <div class="section-content">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img alt="" src="{{ asset('assets/images/stock/hero2.jpg') }}" class="img-fullwidth">
-                        <h3 class="line-bottom-no-border">Car Repair &amp; Service Center</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni temporibus voluptates. Iure
-                            quam laboriosam ullam omnis nulla deleniti, repellendus sequi reiciendis quas voluptatibus
-                            consectetur alias aspernatur deserunt veritatis.</p>
-                        <a class="btn btn-theme-colored btn-flat btn-lg mt-10 mb-sm-30" href="page-about-style1.html">Know
-                            More →</a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box iconbox-theme-colored p-0 mb-30">
-                                    <a href="#" class="icon icon-sm mb-0 mr-10 pull-left flip sm-pull-none mb-sm-15">
-                                        <i class="flaticon-carrepair-transport-6 font-42 text-theme-colored"></i>
-                                    </a>
-                                    <h4 class="icon-box-title m-0 mb-5">Schedule Services</h4>
-                                    <p class="text-gray mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                                        magni temporibus voluptates adipisicing..</p>
-                                    <a class="text-theme-colored font-13" href="#">Read More →</a>
-                                </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+                        <div class="funfact text-center mrb-md-70 mrb-60">
+                            <div class="icon">
+                                <span class="webexflaticon webex-flaticon-briefcase-1"></span>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box iconbox-theme-colored p-0 mb-30">
-                                    <a href="#" class="icon icon-sm mb-0 mr-10 pull-left flip sm-pull-none mb-sm-15">
-                                        <i class="flaticon-carrepair-car-washing-machine font-42 text-theme-colored"></i>
-                                    </a>
-                                    <h4 class="icon-box-title m-0 mb-5">Best Car Services</h4>
-                                    <p class="text-gray mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                                        magni temporibus voluptates adipisicing..</p>
-                                    <a class="text-theme-colored font-13" href="#">Read More →</a>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box iconbox-theme-colored p-0 mb-30">
-                                    <a href="#" class="icon icon-sm mb-0 mr-10 pull-left flip sm-pull-none mb-sm-15">
-                                        <i class="flaticon-carrepair-car-on-a-frame font-42 text-theme-colored"></i>
-                                    </a>
-                                    <h4 class="icon-box-title m-0 mb-5">Complete Analysis</h4>
-                                    <p class="text-gray mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                                        magni temporibus voluptates adipisicing..</p>
-                                    <a class="text-theme-colored font-13" href="#">Read More →</a>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="icon-box iconbox-theme-colored p-0 mb-30">
-                                    <a href="#" class="icon icon-sm mb-0 mr-10 pull-left flip sm-pull-none mb-sm-15">
-                                        <i class="flaticon-carrepair-transport-4 font-42 text-theme-colored"></i>
-                                    </a>
-                                    <h4 class="icon-box-title m-0 mb-5">Security inspection</h4>
-                                    <p class="text-gray mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                                        magni temporibus voluptates adipisicing..</p>
-                                    <a class="text-theme-colored font-13" href="#">Read More →</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-4 sm-text-center mb-sm-30">
-                                <a class="image-popup-vertical-fit" title="Title Here 1"
-                                    href="{{ asset('assets/images/stock/clean_tire.jpg') }}"><img
-                                        class="img-fullwidth maxwidth500"
-                                        src="{{ asset('assets/images/stock/clean_tire.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="col-xs-4 sm-text-center mb-sm-30">
-                                <a class="image-popup-vertical-fit" title="Title Here 1"
-                                    href="{{ asset('assets/images/stock/headlight_wash.jpg') }}"><img
-                                        class="img-fullwidth maxwidth500"
-                                        src="{{ asset('assets/images/stock/headlight_wash.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="col-xs-4 sm-text-center">
-                                <a class="image-popup-vertical-fit" title="Title Here 1"
-                                    href="{{ asset('assets/images/about/lg1.jpg') }}"><img
-                                        class="img-fullwidth maxwidth500"
-                                        src="{{ asset('assets/images/about/lg1.jpg') }}" alt=""></a>
-                            </div>
+                            <h2 class="counter">32</h2>
+                            <h5 class="title">Kinds of Tiles</h5>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="800ms">
+                        <div class="funfact text-center mrb-md-70 mrb-60">
+                            <div class="icon">
+                                <span class="webexflaticon webex-flaticon-like-3"></span>
+                            </div>
+                            <h2 class="counter">1864</h2>
+                            <h5 class="title">Peoples Likes</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="800ms">
+                        <div class="funfact text-center mrb-md-70 mrb-60">
+                            <div class="icon">
+                                <span class="webexflaticon webex-flaticon-trophy-1"></span>
+                            </div>
+                            <h2 class="counter">1280</h2>
+                            <h5 class="title">Awards Achieved</h5>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Divider: Reservation Form -->
-    <section id="reservation" class="bg-lighter">
+    <!-- Funfact Section End -->
+    <!-- Request A Call Back Section Start -->
+    <section class="request-a-call-back pdt-110 pdb-80 pdb-md-110" data-background="images/bg/6.jpg">
         <div class="container">
-            <div class="row align-item-end">
-                <div class="col-md-6">
-                    <div class="p-40 pt-60 pl-0">
-                        <!-- Reservation Form Start-->
-                        <form class="reservation-form" method="post" action="{{ route('contactForm') }}">
-                            @csrf
-                            <h3 class="mt-0 line-bottom text-theme-colored mb-40">Request a Call Back<span
-                                    class="text-theme-color-2 font-weight-600"><br> We will Call you!</span></h3>
-                            <hr>
+            <div class="row">
+                <div class="col-md-12 col-lg-7 col-xl-7 wow fadeInLeft mrb-md-60" data-wow-delay="0ms"
+                    data-wow-duration="1000ms">
+                    <h5 class="text-primary-color text-underline section-icon mrb-15">Requst a Quote</h5>
+                    <h2 class="mrb-20">Fill this Form, We will Contact Shortly!</h2>
+                    <p class="mrb-30">
+                        {{ env('APP_NAME') }} is one of the pioneers in manufacturing ceramic and porcelain
+                        tiles with Grannitto as its brand name. It’s operating since 1996 and has gained high
+                        goodwill in the Building Material and Construction Industry not only in UAE but worldwide.
+                        {{ env('APP_NAME') }} is specialized in manufacturing and distributing quality ceramic
+                        and porcelain tiles. We strive to produce products with distinctive quality and convey
+                        high-class consumer services with the utmost professionalism.
+                    </p>
+                    <br>
+                    <p>We are located in Dubai Industrial City with the most modern manufacturing unit. We have also
+                        invested and joint ventured with top quality OEM partners around the Globe in order to cater
+                        to the requirements and demands of our valuable customers. Our Complete Adress
+                        {{ env('APP_ADDRESS') }}</p>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-5 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
+                    <div class="request-a-call-back-form">
+                        <h3 class="text-white mrt-0 mrb-15">Request a Call Back</h3>
+                        <p class="text-white mrb-30">Lorem ipsum dolor sit amet, consectetur adipisicing Fuga
+                            magnam
+                            maxime ea adipisci iusto.</p>
+                        <form action="#">
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-30">
-                                        <input placeholder="Enter Name" type="text" id="name" name="name" required=""
-                                            class="form-control">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Name" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-30">
-                                        <div class="styled-select">
-                                            <select id="car_select" name="car_select" class="form-control" required="">
-                                                <option value="">- Select Your Vehicle Model -</option>
-                                                <option value="Toyota">Toyota</option>
-                                                <option value="Jeep">Jeep</option>
-                                                <option value="Audi">Audi</option>
-                                                <option value="Truck">Truck</option>
-                                                <option value="Land Rover">Land Rover</option>
-                                                <option value="Lexus">Lexus</option>
-                                                <option value="Mazda">Mazda</option>
-                                                <option value="Mercedes - Benz">Mercedes - Benz</option>
-                                                <option value="Nissan">Nissan</option>
-                                                <option value="Mitsubishi">Mitsubishi</option>
-                                                <option value="Saab">Saab</option>
-                                                <option value="Renault">Renault</option>
-                                                <option value="Mercury">Mercury</option>
-                                                <option value="Pontiac Porsche">Pontiac Porsche</option>
-                                            </select>
-                                        </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Phone" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-30">
-                                        <input placeholder="Email" type="text" id="email" name="email"
-                                            class="form-control" required="">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Email" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-30">
-                                        <input placeholder="Phone" type="text" id="phone" name="phone"
-                                            class="form-control" required="">
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12">
-                                    <div class="form-group mb-0 mt-0">
-                                        <input name="form_botcheck" class="form-control" type="hidden" value="">
+                                <div class="col-lg-12">
+                                    <div class="form-group mrb-0">
                                         <button type="submit"
-                                            class="btn btn-colored btn-theme-colored btn-lg btn-flat border-left-theme-color-2-4px"
-                                            data-loading-text="Please wait...">Call me Back</button>
+                                            class="cs-btn-one btn-primary-color hover-white btn-md btn-block">Request
+                                            Submit</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                        <!-- Reservation Form End-->
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="{{ asset('assets/images/stock/bonut.jpg') }}" alt="">
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="bg-theme-colored">
-        <div class="container pt-0 pb-20">
-            <div class="row">
-                <div class="call-to-action">
-                    <div class="col-md-6">
-                        <h3 class="mt-5 mb-5 text-white vertical-align-middle"><i
-                                class="pe-7s-mail mr-10 font-48 vertical-align-middle"></i> SUBSCRIBE TO OUR
-                            NEWSLETTER</h3>
-                    </div>
-                    <div class="col-md-6">
-                        <form id="mailchimp-subscription-form" class="newsletter-form mt-10">
-                            <div class="input-group">
-                                <input type="email" value="" name="EMAIL" placeholder="Your Email"
-                                    class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL"
-                                    style="height: 45px;">
-                                <span class="input-group-btn">
-                                    <button data-height="45px" class="btn bg-theme-color-2 text-white btn-xs m-0 font-14"
-                                        type="submit">Subscribe</button>
-                                </span>
+    <!-- Request A Call Back Section End -->
+    <!-- Clients Section Start -->
+    <section class="pdt-70 pdb-70 bg-primary-color" data-background="images/bg/abs-bg4.png">
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="owl-carousel client-items">
+                            <div class="client-item">
+                                <img src="{{ asset('assets/images/clients/client1.png') }}" alt="">
                             </div>
-                        </form>
+                            <div class="client-item">
+                                <img src="{{ asset('assets/images/clients/client2.png') }}" alt="">
+                            </div>
+                            <div class="client-item">
+                                <img src="{{ asset('assets/images/clients/client4.png') }}" alt="">
+                            </div>
+                            <div class="client-item">
+                                <img src="{{ asset('assets/images/clients/client5.png') }}" alt="">
+                            </div>
+                            <div class="client-item">
+                                <img src="{{ asset('assets/images/clients/client1.png') }}" alt="">
+                            </div>
+                            <div class="client-item">
+                                <img src="{{ asset('assets/images/clients/client6.png') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+    <!-- Call to Action Start -->
+    <section class="call-to-action">
+        <div class="container">
+            <div class="cta-bg bg-primary-color">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="contact-info">
+                            <div class="cta-contact-icon">
+                                <i class="webexflaticon webex-flaticon-call"></i>
+                            </div>
+                            <div class="cta-contact-content">
+                                <div class="cta-contact-text">Call Us Now</div>
+                                <div class="cta-contact-number">{{ env('APP_PHONE') }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="newsletter-form mrt-md-40">
+                            <form method="post">
+                                <div class="form-group clearfix">
+                                    <input type="email" name="email" value="" placeholder="Email address" required="">
+                                    <button type="submit" class="newsletter-btn"><span
+                                            class="icon fa fa-paper-plane"></span></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
