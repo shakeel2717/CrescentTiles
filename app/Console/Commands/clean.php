@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Category;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
@@ -42,6 +43,45 @@ class clean extends Command
         Artisan::call('config:clear');
         Artisan::call('view:clear');
         Artisan::call('route:clear');
+
+        // create categories
+        $category = new Category();
+        $category->name = 'Paving Stones';
+        $category->save();
+
+        $category = new Category();
+        $category->name = 'Surface Treatment';
+        $category->save();
+
+        $category = new Category();
+        $category->name = 'Paving Tiles';
+        $category->save();
+
+        $category = new Category();
+        $category->name = 'Planters';
+        $category->save();
+
+        $category = new Category();
+        $category->name = 'Building Blocks';
+        $category->save();
+
+        $category = new Category();
+        $category->name = "Wall Blocks";
+        $category->save();
+
+        $category = new Category();
+        $category->name = "Retaining Wall System";
+        $category->save();
+
+        $category = new Category();
+        $category->name = "Kerbstones";
+        $category->save();
+
+
+
+
+
+
         return 0;
     }
 }
