@@ -121,11 +121,11 @@
         <div class="section-content">
             <div class="container">
                 <div class="row">
-                    @foreach ($categories as $category)
-                        <div class="col-md-4">
+                    @foreach ($products as $product)
+                        <div class="col-md-6">
                             <div class="news-wrapper mrb-30">
                                 <div class="news-thumb">
-                                    <img src="{{ asset('assets/category/' . $category->picture) }}" class="img-full"
+                                    <img src="{{ asset('assets/products/' . $product->picture) }}" class="img-full"
                                         alt="blog">
                                     <div class="news-date">
                                         <div class="entry-date">Category</div>
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="news-description">
                                     <h4 class="the-title mrb-20"><a
-                                            href="{{ route('category.show', ['category' => $category->id]) }}">{{ $category->name }}</a>
+                                            href="{{ route('product.show', ['product' => $product->id]) }}">{{ $product->name }}</a>
                                     </h4>
                                 </div>
                             </div>
