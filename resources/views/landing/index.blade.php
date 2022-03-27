@@ -14,9 +14,12 @@
                 <div class="col-md-12 col-xl-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <h5 class="mrb-15 text-primary-color text-underline">Welcome to {{ env('APP_NAME') }}</h5>
                     <h2 class="mrb-25">Industrial City with the most Modern Manufacturing Unit..</h2>
-                    <p>{{ env('APP_NAME') }} is one of the pioneers in manufacturing ceramic and porcelain
-                        tiles with Grannitto as its brand name. It’s operating since 1996 and has gained high
-                        goodwill in the Building Material and Construction Industry not only in UAE but worldwide.
+                    <p>{{ env('APP_NAME') }} is one of the leading Tiles
+                        and Concrete products Manufactures / Suppliers in Abu Dhabi, United Arab Emirates. The Company has
+                        provided the ultimate support in Construction, Electro Mechanical field and Infrastructure. The
+                        Factory is equipped with the world renowned O.C.E.M. Italian Plant and located in Industrial Area
+                        Mussafah, Abu Dhabi. Our continues research & development has enabled us to constantly update and
+                        improve our product quality as per international standard.
                     </p>
                     <ul class="order-list primary-color">
                         <li>Quality Control System, 100% Satisfaction Guarantee</li>
@@ -230,11 +233,12 @@
                     <h2 class="mrb-20">Fill this Form, We will Contact Shortly!</h2>
                     <p class="mrb-30">
                         {{ env('APP_NAME') }} is one of the pioneers in manufacturing ceramic and porcelain
-                        tiles with Grannitto as its brand name. It’s operating since 1996 and has gained high
-                        goodwill in the Building Material and Construction Industry not only in UAE but worldwide.
-                        {{ env('APP_NAME') }} is specialized in manufacturing and distributing quality ceramic
-                        and porcelain tiles. We strive to produce products with distinctive quality and convey
-                        high-class consumer services with the utmost professionalism.
+                        tiles with Grannitto as its brand name. Crescent Tiles Factory L.L.C. is one of the leading Tiles
+                        and Concrete products Manufactures / Suppliers in Abu Dhabi, United Arab Emirates. The Company has
+                        provided the ultimate support in Construction, Electro Mechanical field and Infrastructure. The
+                        Factory is equipped with the world renowned O.C.E.M. Italian Plant and located in Industrial Area
+                        Mussafah, Abu Dhabi. Our continues research & development has enabled us to constantly update and
+                        improve our product quality as per international standard.
                     </p>
                     <br>
                     <p>We are located in Dubai Industrial City with the most modern manufacturing unit. We have also
