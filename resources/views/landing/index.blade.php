@@ -122,7 +122,7 @@
             <div class="container">
                 <div class="row">
                     @foreach ($products as $product)
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="news-wrapper mrb-30">
                                 <div class="news-thumb">
                                     <img src="{{ asset('assets/products/' . $product->picture) }}" class="img-full"

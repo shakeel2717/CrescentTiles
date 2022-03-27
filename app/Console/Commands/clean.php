@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\ProductImage;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
@@ -58,6 +59,43 @@ class clean extends Command
         $product->picture = "1.jpg";
         $product->description = "High quality paving tiles in a variety of colours, sizes, shapes and textures for a wide range of applications in urban as well as rural areas. The pavers can be supplied in fair or shot blast finish. Hydraulically pressed precast concrete Paving and roofing tiles manufactured and tested to BS 7263 specifications.";
         $product->save();
+
+        // insrting sub images in database
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_1.png";
+        $subPhoto->save();
+
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_2.png";
+        $subPhoto->save();
+
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_3.png";
+        $subPhoto->save();
+
+
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_4.png";
+        $subPhoto->save();
+
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_5.png";
+        $subPhoto->save();
+
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_6.png";
+        $subPhoto->save();
+
+        $subPhoto = new ProductImage();
+        $subPhoto->product_id = $product->id;
+        $subPhoto->image = "1_7.png";
+        $subPhoto->save();
 
         $product = new Product();
         $product->category_id = $category->id;

@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="blog-standared-img slider-blog w-25">
+                    <div class="blog-standared-img slider-blog w-25 mx-auto">
                         <img class="img-full" src="{{ asset('assets/products/' . $product->picture) }}" alt="">
                     </div>
                     <div class="project-detail-text">
@@ -27,6 +27,22 @@
                                 <div class="col-lg-12">
                                     <p>{{ $product->description }}</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="project-details-content">
+                            <div class="row mrb-10">
+                                @forelse ($productImages as $productimage)
+                                    <div class="col-lg-4">
+                                        <img src="{{ asset('assets/products/products_images/' . $productimage->image) }}"
+                                            alt="">
+                                    </div>
+                                @empty
+                                    <div class="col-lg-12">
+                                        <h2>This Product have no Extra Images</h2>
+                                    </div>
+                                @endforelse
+
                             </div>
                         </div>
                     </div>
